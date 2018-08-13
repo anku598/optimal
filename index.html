@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>Search Map</title>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Find Your Space</title>
   
   <!-- Bootstrap -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- External Css -->
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/css/themify-icons.css" />
-  <link rel="stylesheet" href="assets/css/et-line.css" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.css" />
-  <link rel="stylesheet" href="assets/css/jquery.nstSlider.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
-  <!-- <link rel="stylesheet" href="assets/css/plyr.css" />
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/css/js-flickr-gallery.css" /> -->
-  
+
   <!-- leaflet -->
   <link rel="stylesheet" href="assets/leaflet/css/leaflet.css">
   <link rel="stylesheet" href="assets/leaflet/css/MarkerCluster.css">
@@ -33,6 +24,9 @@
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  
+  
+  
   
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png">
@@ -46,8 +40,8 @@
     <![endif]-->
     
   </head>
-  <body class="overflow">
-    <!-- Header -->
+  <body>
+    
     <header>
       <nav class="navbar navbar-default cp-navigation">
         <div class="container-fluid">
@@ -88,26 +82,10 @@
               <li style="background-color: #13a89e;">
                 <a style="color: #fff" href="contact.html">Contact</a>
               </li>
-              <!-- <li class="search-button hidden-sm hidden-xs">
-                <a href="#">
-                  <i class="fas fa-search"></i>
-                </a>
-              </li> -->
             </ul>
           </div>
         </div>
       </nav>
-      <!-- <div class="header-search">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <form action="#">
-                <input type="text" placeholder="Search here">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </header>
     <!-- Header End -->
     
@@ -119,7 +97,6 @@
             <div class="col-md-12">
               <div class="subheader-content">
                 <h3 class="subheader-title">Executive Office Suites Office</h3>
-                <p style="color: #fff;font-size: 1.3em;">Executive Office Suites office rental /lease selected spaces below:</p>
               </div>
             </div>
           </div>
@@ -128,156 +105,179 @@
     </div>
     <!-- Subheader End -->
     
-    <div class="dvcp-listing-search-container">
-      
-      <!-- Side Map -->
-      <div class="listing-search-side-map-block">
-        <div id="searchMap" class="listing-side-map"></div>
+    <!-- Listing Search Map -->
+    <div class="cp-container">
+      <!-- Maps -->
+      <div id="searchMap" class="height-350"></div>
+      <!-- Maps End -->
+    </div>
+    <!-- Listing Search Map End -->
+    
+    
+    <!-- Popular Place -->
+    <div class="section-padding-with-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section-heading text-center">
+              <h3>Rent Anywhere Office Spaces</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+            </div>
+          </div> 
+        </div>
+        <div class="row margin-balance">
+          <div class="col-md-8 col-sm-12">
+            <div class="grid-item">
+              <img src="images/place/1.jpg" class="img-responsive" alt="">
+              <div class="overlay"></div>
+              <div class="content">
+                <h4><a href="#">New York</a></h4>
+                <p>25 Listing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="grid-item">
+              <img src="images/place/2.jpg" class="img-responsive" alt="">
+              <div class="overlay"></div>
+              <div class="content">
+                <h4><a href="#">California</a></h4>
+                <p>9 Listing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="grid-item">
+              <img src="images/place/3.jpg" class="img-responsive" alt="">
+              <div class="overlay"></div>
+              <div class="content">
+                <h4><a href="#">Miami</a></h4>
+                <p>16 Listing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="half-height grid-item">
+              <img src="images/place/4.jpg" class="img-responsive" alt="">
+              <div class="overlay"></div>
+              <div class="content">
+                <h4><a href="#">Canbera</a></h4>
+                <p>22 Listing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="half-height grid-item">
+              <img src="images/place/5.jpg" class="img-responsive" alt="">
+              <div class="overlay"></div>
+              <div class="content">
+                <h4><a href="#">Los Angeles</a></h4>
+                <p>20 Listing</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Side Map End -->
-      
-      <div class="dvcp-listing-search-block">
-        
-        
-        
-        
-        <div class="dvcp-listing-search-result">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="column col-xs-12">
-                  <div class="section-padding">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-8">
-                          <div class="property-block-container">
-                            <div class="property-block property-details topDivStyle">
-                              <div class="author tstyle1">
-                                <div class="author-thumb">
-                                  <a href="#">
-                                    <img src="images/widget/author-thumb.jpg" class="img-responsive" alt="">
-                                  </a>
-                                </div>
-                                <div class="author-info">
-                                  <h6>
-                                    <a href="#">Stephen sunderland</a>
-                                  </h6>
-                                  
-                                </div>
-                              </div>
-                              
-                              <div class="tstyle2">
-                                <p>Stephen Sunderland, Senior Managing Director, has over thirty years of commercial real estate experience with a background of successfully leasing more than 2,500,000 square feet of commercial real estate. His father was a successful architectural designer who built over 50,000,000 square feet of shopping centers, best known for his design of two of the largest malls in the world: Mall of America and the West Edmonton Mall. Stephen's father was a mentor and influence on his career.</p>
-                              </div>
-                            </div>
-                            <div class="property-block property-thumb">
-                              <div class="property-block property-content property-details">
-                                <h4>Rent Manhattan Coworking & Office Space</h4>
-                                <p>Manhattan is one of the world's most desirable business locations. Just hearing the name brings to mind images of prestige, dynamism, and innovation, and once here you have the feeling that this is where things happen.
-                                </p>
-                                <p>Often referred to as one of the top economic engines of the United States, the borough of Manhattan is characterized by having a diverse and dynamic economic base. Large corporates in banking, finance, and legal have made Lower Manhattan their home, Midtown Manhattan offices are popular with retailers, media, and entertainment firms, and Silicon Alley (the area around the Flatiron Building) is the place to be for ambitious startups and creative firms. Whatever your business idea is, you will be in good company in Manhattan. </p>
-                                
-                                <p>Our commercial brokerage services are available to help you solve your Midtown New York real estate woes. Whether you’re in search of an office, retail or industrial location, we can help you save 15 to 20% or more on your rental. You might wonder how we can offer these savings to you. Find out how our tenant brokers differ from other types of rental brokers. </p>
-                              </div>
-                            </div>
-                            
-                            <div class="property-block property-features">
-                              <h4>Workspace Types Available</h4>
-                              <ul class="feature-list">
-                                <li>BConference Room</li>
-                                <li>Remote Office</li>
-                                <li>Presentation Room</li>
-                                <li>Shared Office Space</li>
-                                <li>Coworking</li>
-                                <li>Cubicle</li>
-                                <li>Deposition Room</li>
-                                <li>Meeting Room</li>
-                                <li>Private Office</li>
-                                <li>Training Room</li>
-                                <li>Desk Space</li>
-                              </ul>
-                            </div>
-                            
-                            
-                            <div class="property-block property-nearby">
-                              <h4>Search Other Manhattan Neighborhoods.. </h4>
-                              <div class="nearby-table">
-                                
-                                <div class="tab-content">
-                                  <div role="tabpanel" class="tab-pane active" id="small">
-                                    <div class="table-responsive">
-                                      <table class="table">
-                                        <tr>
-                                          <th>Midtown</th>
-                                          <th>Midtown South</th>
-                                          <th>Downtown</th>
-                                        </tr>
-                                        <tr>
-                                          <td>Columbus Circle</td>
-                                          <td>Bowery</td>
-                                          <td>Financial District</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Empire State Building</td>
-                                          <td>Chelsea</td>
-                                          <td>Insurance District</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Garment District</td>
-                                          <td>Flatiron District</td>
-                                          <td>NoHo</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                          <td>Grand Central</td>
-                                          <td>Gramercy Park</td>
-                                          <td>Tribeca</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                          <td>Lincoln Square</td>
-                                          <td>Greenwich Village</td>
-                                          <td>Wall Street</td>
-                                        </tr>
-                                      </table>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
-                            
-                            <div class="property-block property-features">
-                              <aside class="widget widget-author-contact sidebar">
-                                <div class="info">
-                                  <h5>
-                                    <a href="#">Contact With Us</a>
-                                  </h5>
-                                  <h6>
-                                    <i class="fas fa-phone"></i> (212)258-2700</h6>
-                                  </div>
-                                  <div class="author-contact">
-                                    <form action="#">
-                                      <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                      </div>
-                                      <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                      </div>
-                                      <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone Number">
-                                      </div>
-                                      <div class="form-group">
-                                        <textarea name="author-contact" class="form-control" placeholder="Message" id="message"></textarea>
-                                      </div>
-                                      <button class="button primary-bg btn-block">Contact With Me</button>
-                                    </form>
-                                  </div>
-                                </aside>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+    </div>
+    <!-- Popular Place End -->
+    
+    
+    <!-- Search Properties -->
+    <div class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="property-block-container">
+              
+              <div class="property-block property-thumb">
+                <div class="property-block property-content property-details">
+                  <h4>Rent Manhattan Coworking & Office Space</h4>
+                  <p>Manhattan is one of the world's most desirable business locations. Just hearing the name brings to mind images of prestige, dynamism, and innovation, and once here you have the feeling that this is where things happen.
+                  </p>
+                  <p>Often referred to as one of the top economic engines of the United States, the borough of Manhattan is characterized by having a diverse and dynamic economic base. Large corporates in banking, finance, and legal have made Lower Manhattan their home, Midtown Manhattan offices are popular with retailers, media, and entertainment firms, and Silicon Alley (the area around the Flatiron Building) is the place to be for ambitious startups and creative firms. Whatever your business idea is, you will be in good company in Manhattan. </p>
+                  
+                  <p>Our commercial brokerage services are available to help you solve your Midtown New York real estate woes. Whether you’re in search of an office, retail or industrial location, we can help you save 15 to 20% or more on your rental. You might wonder how we can offer these savings to you. Find out how our tenant brokers differ from other types of rental brokers. </p>
+                </div>
+              </div>
+              
+              <div class="property-block property-features">
+                <h4>Workspace Types Available</h4>
+                <ul class="feature-list">
+                  <li>BConference Room</li>
+                  <li>Remote Office</li>
+                  <li>Presentation Room</li>
+                  <li>Shared Office Space</li>
+                  <li>Coworking</li>
+                  <li>Cubicle</li>
+                  <li>Deposition Room</li>
+                  <li>Meeting Room</li>
+                  <li>Private Office</li>
+                  <li>Training Room</li>
+                  <li>Desk Space</li>
+                </ul>
+              </div>
+              
+              <div class="property-block property-details topDivStyle">
+                <div class="author tstyle1">
+                  <div class="author-thumb">
+                    <a href="#">
+                      <img src="images/widget/author-thumb.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                  <div class="author-info">
+                    <h6>
+                      <a href="#">Stephen sunderland</a>
+                    </h6>
+                    
+                  </div>
+                </div>
+                
+                <div class="tstyle2">
+                  <p>Stephen Sunderland, Senior Managing Director, has over thirty years of commercial real estate experience with a background of successfully leasing more than 2,500,000 square feet of commercial real estate. His father was a successful architectural designer who built over 50,000,000 square feet of shopping centers, best known for his design of two of the largest malls in the world: Mall of America and the West Edmonton Mall. Stephen's father was a mentor and influence on his career.</p>
+                </div>
+              </div>
+              
+              <div class="property-block property-nearby">
+                <h4>Search Other Manhattan Neighborhoods.. </h4>
+                <div class="nearby-table">
+                  
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="small">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <tr>
+                            <th>Midtown</th>
+                            <th>Midtown South</th>
+                            <th>Downtown</th>
+                          </tr>
+                          <tr>
+                            <td>Columbus Circle</td>
+                            <td>Bowery</td>
+                            <td>Financial District</td>
+                          </tr>
+                          <tr>
+                            <td>Empire State Building</td>
+                            <td>Chelsea</td>
+                            <td>Insurance District</td>
+                          </tr>
+                          <tr>
+                            <td>Garment District</td>
+                            <td>Flatiron District</td>
+                            <td>NoHo</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Grand Central</td>
+                            <td>Gramercy Park</td>
+                            <td>Tribeca</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Lincoln Square</td>
+                            <td>Greenwich Village</td>
+                            <td>Wall Street</td>
+                          </tr>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -285,78 +285,243 @@
               </div>
             </div>
           </div>
-          <!-- Footer -->
-          <footer>
-            <div class="grey-bg section-padding-50">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="footer-social-link">
-                      <div class="footer-logo">
-                        <a href="#">
-                          <img src="images/logo.png" class="img-responsive" alt="Footer Logo">
-                        </a>
-                      </div>
-                      <div class="social-link">
-                        <ul>
-                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
+          <div class="col-md-4">
+            <div class="sidebar">
+              <aside class="widget widget-author-contact">
+                
+                <div class="info">
+                  <h5>
+                    <a href="#">Contact With Us</a>
+                  </h5>
+                  
+                  <h6>
+                    <i class="fas fa-phone"></i> (212)258-2700</h6>
                   </div>
+                  <div class="author-contact">
+                    <form action="#">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                      </div>
+                      <div class="form-group">
+                        <textarea name="author-contact" class="form-control" placeholder="Message" id="message"></textarea>
+                      </div>
+                      <button class="button primary-bg btn-block">Contact With Me</button>
+                    </form>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search Properties End -->
+      
+      <!-- Call to Action -->
+      <div class="cpdv-container primary-bg section-padding-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-6">
+              <div class="left-content">
+                <div class="call-to-action-content">
+                  <h3>Subscribe Today!</h3>
+                  <p>Don’t miss our future updates. Get Subscribe today to getting Updates!</p>
                 </div>
               </div>
             </div>
-            <div class="copyright primary-bg">
-              <div class="col-md-6 col-md-push-6">
-                <div class="footer-nav" id="footer-nav">
+            <div class="col-lg-5 col-md-6">
+              <div class="right-content-sm">
+                <div class="call-to-action-form">
+                  <form class="subscription-form" action="#" method="post">
+                    <input type="text" placeholder="Enter your mail here">
+                    <button class="button white-bg">Subscribe</button>
+                    <p class="newsletter-success"></p>
+                    <p class="newsletter-error"></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Call to Action End -->
+      
+    <!-- Footer -->
+  <footer>
+      <div class="footer-widget-area section-padding">
+        <div class="container">
+          <div class="row margin-balance">
+            <div class="col-md-3 col-sm-6">
+              <aside class="widget footer-get-in-touch-widget">
+                <h6 class="widget-title">Get in Touch</h6>
+                <p>
+                  <span class="title">Address</span>
+                  <span class="contact-info">112 west 34th Street, 17th floor,
+                    <br> New York, NY 10120</span>
+                </p>
+                <p>
+                  <span class="title">Phone</span>
+                  <span class="contact-info">(212)258-2700</span>
+                </p>
+                <p>
+                  <span class="title">Email</span>
+                  <span class="contact-info">info@optimalspaces.com</span>
+                </p>
+              </aside>
+            </div>
+  
+            <div class="col-md-3 col-sm-6">
+              <aside class="widget widget-useful-link">
+                <h6 class="widget-title">Optimal Spaces</h6>
+                <ul class="links">
+                  <li>
+                    <a href="#">Services We Offer</a>
+                  </li>
+                  <li>
+                    <a href="#">Testimonial</a>
+                  </li>
+                  <li>
+                    <a href="#">Market Research</a>
+                  </li>
+                  <li>
+                    <a href="#">Site Map</a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <aside class="widget widget-useful-link">
+                <h6 class="widget-title">Buy Information</h6>
+                <ul class="links">
+                  <li>
+                    <a href="#">How to Purchase</a>
+                  </li>
+                  <li>
+                    <a href="#">Tips &amp; Tricks</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Legal / Law</a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <aside class="widget widget-useful-link">
+                <h6 class="widget-title">Sell Information</h6>
+                <ul class="links">
+                  <li>
+                    <a href="#">How to Purchase</a>
+                  </li>
+                  <li>
+                    <a href="#">Tips &amp; Tricks</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Legal / Law</a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grey-bg section-padding-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <div class="footer-social-link">
+                <div class="footer-logo">
+                  <a href="#">
+                    <img src="images/logo.png" class="img-responsive" alt="Footer Logo">
+                  </a>
+                </div>
+                <div class="social-link">
                   <ul>
-                    
-                    <li><a href="#">Terms &amp; Conditions </a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 col-md-pull-6">
-                <p class="copyright-text">Copyright 2018, <a href="#">Real Estate</a>. All Rights Reserved</p>
-              </div>
             </div>
-          </footer>
-          <!-- Footer End -->
+          </div>
         </div>
       </div>
+      <div class="copyright primary-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6">
+              <div class="footer-nav" id="footer-nav">
+                <ul>
+  
+                  <li>
+                    <a href="#">Terms &amp; Conditions </a>
+                  </li>
+  
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-pull-6">
+              <p class="copyright-text">Copyright 2018,
+                <a href="#">Real Estate</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  
+      
+      
+      
+      
       
       
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="assets/js/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/visible.js"></script>
-      <script src="assets/js/owl.carousel.min.js"></script>
-      <script src="assets/js/jquery.nstSlider.min.js"></script>
-      <script src="assets/js/bootstrap-select.min.js"></script>
-      <script src="assets/js/plyr.js"></script>
-      <script src="assets/js/jquery-migrate-3.0.1.js"></script>
-      <script src="assets/js/jquery.magnific-popup.min.js"></script>
-      <script src="assets/js/js-flickr-gallery.js"></script>
-      <script src="assets/js/tinymce.min.js"></script>
-      <script src="assets/js/isotope.pkgd.min.js"></script>
-      <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-      <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-      
+
       <!-- leaflet -->
       <script src="assets/leaflet/js/dummylatlng.js"></script>
       <script src="assets/leaflet/js/leaflet-src.js"></script>
       <script src="assets/leaflet/js/leaflet.markercluster-src.js"></script>
-      
-      <script src="js/custom.js"></script>
-      <script src="js/dashboard.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
-      <script src="js/map.js"></script>
       <script src="js/searchMap.js"></script>
     </body>
+    
     </html>

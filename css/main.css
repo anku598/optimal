@@ -670,8 +670,8 @@ header.dashboard-header .cp-navigation {
     background: #ffffff;
   }
   .cp-navigation .navbar-header .navbar-toggle.collapsed {
-    background: transparent;
-    border: 1px solid #ffffff;
+    background: #0fa79c;
+    border: 1px solid #0fa79c;
   }
   .cp-navigation .navbar-collapse {
     border-color: transparent;
@@ -3772,7 +3772,7 @@ input[type=radio]:checked~.check {
 -----------------------------------------------*/
 
 .sidebar .widget:not(.agent-profile) {
-  padding: 40px;
+  padding: 20px;
   -webkit-box-shadow: 0 0 20px rgba(38, 38, 38, 0.2);
   box-shadow: 0 0 20px rgba(38, 38, 38, 0.2);
 }
