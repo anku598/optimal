@@ -1,4 +1,4 @@
-"use strict";
+
 
 if(document.getElementById('searchMap') != null){
     L.HtmlIcon = L.Icon.extend({
@@ -31,7 +31,7 @@ if(document.getElementById('searchMap') != null){
 
     var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+        attribution: ''
       }),
       latlng = L.latLng(-37.82, 175.24);
 
@@ -47,9 +47,9 @@ if(document.getElementById('searchMap') != null){
       }
 
        var markerHTML = new L.HtmlIcon({
-          html : "<img class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive' src='images/marker/"+k+".png' alt='markericon' />", 
+          html : "", 
       });
-
+ 
       markers.on('clusterclick', function() {
         k = 1;
         var markerHTML = new L.HtmlIcon({
