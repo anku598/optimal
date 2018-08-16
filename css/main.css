@@ -2910,7 +2910,7 @@ input[type=radio]:checked~.check {
 .listing .content-block .author .author-info {
   float: left;
   width: calc(100% - 50px);
-  padding: 0 20px;
+  padding: 0 0px;
   position: relative;
   background: #ffffff;
 }
