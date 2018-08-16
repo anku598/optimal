@@ -4569,7 +4569,7 @@ input[type=radio]:checked~.check {
   width: 40px;
   line-height: 40px;
   text-align: center;
-  background: #0fa79c;
+  background: rgba(15, 167, 156, 0.6);
   border-radius: 50%;
   color: #ffffff;
 }
@@ -6213,7 +6213,7 @@ input[type=radio]:checked~.check {
 
 .offices-list{
   margin-bottom: 20px!important;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #0fa79c;
 }
 
 .custom-thumb{
