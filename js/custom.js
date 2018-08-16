@@ -314,7 +314,7 @@ $(document).ready(function () {
         $(this).owlCarousel({
             singleItem: true,
             slideSpeed: 200,
-            autoPlay: 3000,
+            autoPlay: false,
             stopOnHover: true,
             navigation: true,
             navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
